@@ -1,6 +1,9 @@
 **Status:** Maintenance (expect bug fixes and minor updates)
 
-# Procgen Benchmark
+# Embodied Procgen Benchmark
+
+#### Difference From the Original 
+This repo contains the same procgen environments but provides the standard rgb pixels as well as an additional observation vector which contains direct feedback from the agent "body" such as kinematics info, location, physical contact, etc. A (possible) reason why a majority of reinforcement learning algorithms lack sample efficiency and generalization is because they have no sense of embodiment or realistic senses. With access to a richer set of non-visual feedback agents will be able to make more generalized associations and learn more from each sample. If increasing the variety of inputs allows reinforcement learning agents to perform better, then that should be standard practice. Improving agents should be done through increasing the task complexity and dimensionality not by decreasing the input space to the point where each environment is at the fringe of learnability.
 
 #### [[Blog Post]](https://openai.com/blog/procgen-benchmark/) [[Paper]](https://arxiv.org/abs/1912.01588)
 
